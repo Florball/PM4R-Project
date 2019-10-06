@@ -67,6 +67,10 @@
 		src="https://www.e-quipu.pe/static/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
 	<script type="text/javascript" src="https://www.e-quipu.pe/static/application/js/default-login-home.js?v04"></script>
 	<script type="text/javascript" src="https://www.e-quipu.pe/static/js/yisus-t-captcha.js"></script>
+	<!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+	<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+	<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+	<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
@@ -845,7 +849,7 @@
 		/* New CSS CAJA */
 
 		.caja-img {
-			background: url('https://www.e-quipu.pe/static/application/home/img/ingenios.jpg') no-repeat center center fixed;
+			background: url('#') no-repeat center center fixed;
 			position: fixed;
 			z-index: 6;
 			margin-top: 230px;
@@ -876,8 +880,19 @@
 
 	<!-- <div class="contenedor-caja">
 	<button class="caja-button button">X</button>
-	<a href="https://www.e-quipu.pe/default/evento/evento/url/evento-inngenios-1523304673"><img src="https://www.e-quipu.pe/static/application/home/img/ingenios.jpg" class="img-responsive caja-img"></a>
+	<a href="https://www.e-quipu.pe/default/evento/evento/url/evento-inngenios-1523304673"><img src="#" class="img-responsive caja-img"></a>
 </div> -->
+
+	<!-- Bubble Whatsapp  -->
+	<div class="px-2 px-lg-4 mb-2 mb-xl-5 fixed-bottom general-padding">
+		<div class="float-right">
+			<a class="align-items-center rounded-circle whatsapp text-center" target="_blank" href="" id="write-us" data-toggle="tooltip"
+				data-placement="left" title="¡Escríbenos!">
+				<i class="far fa-comment-dots light"></i>
+			</a>
+		</div>
+	</div>
+	<!-- /Bubble Whatsapp  -->
 
 	<div id="newHome">
 		<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -1120,7 +1135,7 @@
 				</div>
 			</div>
 			<div id="login-recover" class="login-recover afterkove hidden-xs hidden-sm"
-				style="position: absolute; top: 0; left: 100%; background: url(https://www.e-quipu.pe/static/application/home/img/backgroundrecover.png); background-repeat: no-repeat; background-size: cover; background-position: center top; color: white; height: 100vh; width: 100%;">
+				style="position: absolute; top: 0; left: 100%; background: url(#); background-repeat: no-repeat; background-size: cover; background-position: center top; color: white; height: 100vh; width: 100%;">
 				<div class="row" style="background-color: rgba(0,0,0,0.5); width: 100%; height: 100%;">
 					<div class="col-md-12" style="color: white;">
 						<div class="loquesea"
@@ -1145,7 +1160,7 @@
 		</section>
 
 		<section class="hidden-md hidden-lg"
-			style="background: url(https://www.e-quipu.pe/static/application/home/img/background.png); background-repeat: no-repeat; background-size: cover; background-position: left top;">
+			style="background: url(#); background-repeat: no-repeat; background-size: cover; background-position: left top;">
 			<div class="mobile-row row hidden-md hidden-lg" style="background-color: rgba(0,0,0,0.5); height: 100%;">
 				<div class="col-xs-12 col-sm-12"
 					style="overflow: hidden; position: relative; height: 100%; width: 100%; padding: 0px;">
@@ -2302,7 +2317,9 @@
 			})
 		});
 	</script>
-
+	<!-- Load all styles fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+	<script src="tooltip.js"></script>
 </body>
 
 </html>
